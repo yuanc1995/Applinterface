@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.zsp322.clubs_notifications.Login"
+    tools:showIn="@layout/activity_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:id="@+id/User_Name"
+        android:textSize="32sp"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@+id/User_Name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frameLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_password"
+        android:id="@+id/User_Password"
+        android:textSize="32sp"
+
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+
+
+        android:id="@+id/frameLayout2"
+        android:layout_below="@+id/User_Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+</RelativeLayout>
